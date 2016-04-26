@@ -1,4 +1,4 @@
-FROM    ukti/base
+FROM    ukti/base-ubuntu
 
 RUN     apt-get update -y && \
         apt-get install -y nginx dnsmasq
