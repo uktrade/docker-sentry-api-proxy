@@ -1,0 +1,8 @@
+FROM    ukti/alpine-base
+
+RUN     apk add --update nginx dnsmasq
+
+ADD     /root /
+RUN     chmod a+x /etc/services/*/run
+
+EXPOSE  80 443

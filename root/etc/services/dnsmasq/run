@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+# let's call dnsmasq but clean all env variables
+exec dnsmasq -u root -k
